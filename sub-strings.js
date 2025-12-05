@@ -12,6 +12,8 @@
 // b   ------------> length=1
 
 const toFindMaxSubstring = (str)=>{
+    if(!str) return {char: [], length: 0}
+
     let currLen = 1;
     let maxLen = 1;
 
