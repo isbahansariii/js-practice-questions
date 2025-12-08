@@ -356,7 +356,7 @@ Sets, duplicate handling, streak logic, O(n)
 
 ---
 
-# 1️⃣1️⃣ **Two Sum (Brute Force)**
+# 1️⃣1️⃣ **Two Sum**
 
 **File:** `twoSum.js`
 
@@ -390,7 +390,7 @@ Nested loops, index pairing, brute-force lookup
 
 ---
 
-# 1️⃣2️⃣ **Unique Elements in Array (Using Set)**
+# 1️⃣2️⃣ **Unique Elements in Array (Remove Duplicates)**
 
 **File:** `uniqueNum-in-array.js`
 
@@ -418,7 +418,7 @@ Using `Set` automatically eliminates repeated values.
 
 ---
 
-# 1️⃣3️⃣ **Unique Numbers (Non-Repeating Elements)**
+# 1️⃣3️⃣ **Find Numbers That Appear Only Once**
 
 **File:** `genUniqueNum.js`
 
