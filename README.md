@@ -9,7 +9,6 @@
 1. [Array.prototype.last](#1️⃣-arrayprototypelast)
 2. [Counter (Closure)](#2️⃣-counter-closure)
 3. [Max Even-Length Subarray With Index](#3️⃣-max-even-length-subarray-with-index)
-4. [Plaindrome Checker](# 4️⃣ -Palindrome Checker)
 
 ---
 
