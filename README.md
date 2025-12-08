@@ -6,7 +6,7 @@
 
 # 📚 Table of Contents
 
-1. [1️⃣ Array.prototype.last](#1-arrayprototypelast)
+1. [1️⃣ Array.prototype.last](#1%EF%B8%8F⃣-arrayprototypelast)
 2. [2️⃣ Counter (Closure)](#2-counter-closure)
 3. [3️⃣ Max Even-Length Subarray With Index](#3-max-even-length-subarray-with-index)
 4. [4️⃣ Palindrome Checker](#4-palindrome-checker)
