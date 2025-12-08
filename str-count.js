@@ -17,7 +17,10 @@ function charCount(str){
 
 console.log(charCount(str))
 
-// {
-//     a: 3, 
-//     b: 5,
-// }
+// Output will be in object like: 
+/* 
+{
+    a: 3, 
+    b: 5,
+}
+*/
