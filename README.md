@@ -9,6 +9,13 @@
 1. [Array.prototype.last](#1️⃣-arrayprototypelast)
 2. [Counter (Closure)](#2️⃣-counter-closure)
 3. [Max Even-Length Subarray With Index](#3️⃣-max-even-length-subarray-with-index)
+4. [Palindrome Checker](#4️⃣-palindrome-checker)
+5. [Prime Number Checker](#5️⃣-prime-number-checker)
+6. [Sleep Function](#6️⃣-sleep-function-async-timeout)
+7. [Square of Array](#7️⃣-square-of-array)
+8. [Character Count in String](#8️⃣-character-count-in-string)
+9. [Max Consecutive Substring Length (Simple)](#9️⃣-max-consecutive-substring-length-simple)
+10. [Max Consecutive Substring (Characters Included)](#🔟-max-consecutive-substring-characters-included)
 
 ---
 
@@ -18,9 +25,9 @@
 
 ### 📝 Problem Explanation
 
-Extend JavaScript’s Array prototype by adding a method `.last()` that:
+Extend JavaScript’s Array prototype by adding `.last()` that:
 
-* Returns the **last element** of the array
+* Returns the **last element**
 * Returns **-1** if the array is empty
 
 ### 📥 Input
@@ -33,15 +40,13 @@ const arr2 = [];
 ### 📤 Output
 
 ```js
-arr.last();  // 10
-arr2.last(); // -1
+10
+-1
 ```
 
 ### 🧠 Concepts Used
 
-* Prototype modification
-* Array indexing
-* Edge-case handling
+Prototype methods, indexing, edge cases
 
 ---
 
@@ -51,12 +56,11 @@ arr2.last(); // -1
 
 ### 📝 Problem Explanation
 
-Implement a function `createCounter(n)` that returns **another function**.
-Every time the returned function is called, it should:
+`createCounter(n)` returns another function that:
 
-* Return the **current count**
-* Then increment the count
-* Maintain state using **closures**
+* Returns the current count
+* Increments it
+* Uses a **closure** to preserve state
 
 ### 📥 Input
 
@@ -69,7 +73,7 @@ counter();
 
 ### 📤 Output
 
-```js
+```
 10
 11
 12
@@ -77,9 +81,7 @@ counter();
 
 ### 🧠 Concepts Used
 
-* Lexical scope
-* Closures
-* State preservation without global variables
+Closures, lexical scope, state management
 
 ---
 
@@ -89,17 +91,14 @@ counter();
 
 ### 📝 Problem Explanation
 
-You are given a **2D array**.
-For each inner array:
+Given a 2D array:
 
-1. Calculate the sum
-2. Check if the sum is **even**
-3. Among all even-sum arrays, find the one with the **maximum length**
+1. Compute sum of each inner array
+2. Check whether sum is **even**
+3. Track the **longest** even-sum array
+4. Return `[maxLength, index]`
 
-Return:
-
-* `[maxLength, index]`
-* If no even-sum array exists → return `[0, 0]`
+If none exist → return `[0, 0]`
 
 ### 📥 Input
 
@@ -119,22 +118,9 @@ Return:
 [4, 4]
 ```
 
-### ✔ Why?
-
-* `[2]` → even sum, length 1
-* `[1,3,5]` → odd sum
-* `[1,3,6]` → even sum, length 3
-* `[3,3,3]` → odd sum
-* `[2,2,2,2]` → even sum, **length 4 (max)**
-
-So → return `[4, 4]`
-
 ### 🧠 Concepts Used
 
-* 2D array traversal
-* Using `reduce()`
-* Even/odd check using `%`
-* Tracking maximum values
+2D traversal, `reduce()`, even check, max tracking
 
 ---
 
@@ -144,14 +130,12 @@ So → return `[4, 4]`
 
 ### 📝 Problem Explanation
 
-A palindrome is a string that reads the **same forward and backward** (e.g., `"madam"`, `"121"`, `"racecar"`).
-The task is to check whether the given string is a palindrome.
+A palindrome reads the same forwards and backwards.
+Logic:
 
-The steps:
-
-1. Reverse the string
-2. Compare it with the original
-3. Print whether it is a palindrome or not
+1. Reverse string
+2. Compare with original
+3. Print result
 
 ### 📥 Input
 
@@ -162,16 +146,14 @@ checkPlaindrome("madam");
 
 ### 📤 Output
 
-```txt
+```
 hello is not a palindrome
 madam is a palindrome
 ```
 
 ### 🧠 Concepts Used
 
-* `split()`, `reverse()`, `join()`
-* String comparison
-* Basic conditional logic
+String reversal, conditionals, equality checking
 
 ---
 
@@ -181,19 +163,15 @@ madam is a palindrome
 
 ### 📝 Problem Explanation
 
-Determine whether a given number is:
+Checks whether a number is:
 
-* A **prime number**
-* **Not prime**
-* **Composite**
-* **Zero**
-* **Negative**
+* Prime
+* Composite
+* Not prime
+* Zero
+* Negative
 
-Logic:
-
-* A prime number is divisible only by 1 and itself
-* Loop from 2 → `num/2` for efficiency
-* Track a boolean `isPrime`
+Loop from `2 → num/2` for efficiency.
 
 ### 📥 Input
 
@@ -207,7 +185,7 @@ checkPrime(10);
 
 ### 📤 Output
 
-```txt
+```
 5 is a prime number.
 1 is a composite number.
 -7 is -ve or 0.
@@ -217,10 +195,7 @@ checkPrime(10);
 
 ### 🧠 Concepts Used
 
-* Number theory basics
-* Modulus `%`
-* Looping with early checks
-* Edge-case handling
+Loops, modulus, number theory basics
 
 ---
 
@@ -230,19 +205,13 @@ checkPrime(10);
 
 ### 📝 Problem Explanation
 
-Implement a custom `sleep(millis)` function that:
-
-* Returns a **Promise**
-* Resolves after the given number of milliseconds
-* Works like a delay/wait function in async code
+Implement a Promise-based delay.
 
 ### 📥 Input
 
 ```js
 let t = Date.now();
-sleep(100).then(() => {
-    console.log(Date.now() - t);
-});
+sleep(100).then(() => console.log(Date.now() - t));
 ```
 
 ### 📤 Output
@@ -251,12 +220,240 @@ sleep(100).then(() => {
 ~100
 ```
 
-(not exact — depends on system timing)
+### 🧠 Concepts Used
+
+Promises, async execution, timers
+
+---
+
+# 7️⃣ **Square of Array**
+
+**File:** `squareOfArray.js`
+
+### 📝 Problem Explanation
+
+Return the **square** of every element in an array using `map()`.
+
+### 📥 Input
+
+```js
+toSquare([5, 7, 9, 10]);
+```
+
+### 📤 Output
+
+```js
+[25, 49, 81, 100]
+```
 
 ### 🧠 Concepts Used
 
-* Promises
-* `setTimeout()`
-* Async behavior in JavaScript
+`map()`, pure functions, array transformation
+
+---
+
+# 8️⃣ **Character Count in String**
+
+**File:** `str-count.js`
+
+### 📝 Problem Explanation
+
+Count:
+
+* How many times each character appears in a string
+* Return an object where `key = character` and `value = count`
+
+### 📥 Input
+
+```js
+"create a function that does every character count in the string."
+```
+
+### 📤 Output
+
+```js
+{
+  c: 6,
+  r: 4,
+  e: 7,
+  a: 4,
+  ...
+}
+```
+
+*(Actual values vary — example only)*
+
+### 🧠 Concepts Used
+
+Loops, object frequency map, string traversal
+
+---
+
+# 9️⃣ **Max Consecutive Substring Length (Simple)**
+
+**File:** `sub-string.js`
+
+### 📝 Problem Explanation
+
+Find the **maximum number of consecutive repeating characters**, but **only return the length**.
+
+Example:
+`"abbbbccccaab"` → longest sequence is `"bbbb"` with length `4`.
+
+### 📥 Input
+
+```js
+toFindMaxSubstring("abbbbccccaab")
+```
+
+### 📤 Output
+
+```js
+4
+```
+
+### 🧠 Concepts Used
+
+Linear scan, streak counting, O(n) time complexity
+
+---
+
+# 🔟 **Max Consecutive Substring (Characters Included)**
+
+**File:** `sub-string-updated.js`
+
+### 📝 Problem Explanation
+
+Improved version of previous problem:
+
+Returns:
+
+* `length` of longest repeating sequence
+* All `characters` that achieve that max length
+  (using a Set to avoid duplicates)
+
+Example:
+`"abc"` → max streak = 1, characters = `['a', 'b', 'c']`
+
+### 📥 Input
+
+```js
+toFindMaxSubstring("abc");
+```
+
+### 📤 Output
+
+```js
+{ char: ['a', 'b', 'c'], length: 1 }
+```
+
+### 🧠 Concepts Used
+
+Sets, duplicate handling, streak logic, O(n)
+
+---
+
+# 1️⃣1️⃣ **Two Sum (Brute Force)**
+
+**File:** `twoSum.js`
+
+### 📝 Problem Explanation
+
+Classic coding interview problem:
+Given an array and a target sum, return the **indices** of the two numbers that add up to the target.
+
+Brute force solution:
+
+* Loop through each element
+* For each index `i`, check every later index `j`
+* Return `[i, j]` if `arr[i] + arr[j] === target`
+
+### 📥 Input
+
+```js
+arr = [3, 2, 4];
+target = 6;
+```
+
+### 📤 Output
+
+```js
+[1, 2]
+```
+
+### 🧠 Concepts Used
+
+Nested loops, index pairing, brute-force lookup
+
+---
+
+# 1️⃣2️⃣ **Unique Elements in Array (Using Set)**
+
+**File:** `uniqueNum-in-array.js`
+
+### 📝 Problem Explanation
+
+Extract all **unique values** from an array by removing duplicates.
+
+Using `Set` automatically eliminates repeated values.
+
+### 📥 Input
+
+```js
+[2, 6, 9, 8, 9, 2]
+```
+
+### 📤 Output
+
+```js
+[2, 6, 8, 9]
+```
+
+### 🧠 Concepts Used
+
+`Set`, spread operator, duplicate removal
+
+---
+
+# 1️⃣3️⃣ **Unique Numbers (Non-Repeating Elements)**
+
+**File:** `genUniqueNum.js`
+
+### 📝 Problem Explanation
+
+Find numbers that appear **only once** in the array — all non-repeating values.
+
+Two approaches:
+
+### ✔ Approach 1: Nested Loops
+
+Count frequency manually.
+If a number appears exactly once → include it.
+
+### ✔ Approach 2: Using `filter()`
+
+If:
+
+```
+indexOf(n) === lastIndexOf(n)
+```
+
+→ It appears only once.
+
+### 📥 Input
+
+```js
+[2, 6, 9, 8, 9, 2]
+```
+
+### 📤 Output
+
+```js
+[6, 8]
+```
+
+### 🧠 Concepts Used
+
+Frequency counting, nested loops, `filter()`, `indexOf()`, `lastIndexOf()`
 
 ---
