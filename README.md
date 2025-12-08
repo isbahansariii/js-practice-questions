@@ -6,19 +6,21 @@
 
 # 📚 Table of Contents
 
-1. [1️⃣ Array.prototype.last](#arrayprototypelast)
-2. [2️⃣ Counter (Closure)](#counter-closure)
-3. [3️⃣ Max Even-Length Subarray With Index](#max-even-length-subarray-with-index)
-4. [4️⃣ Palindrome Checker](#palindrome-checker)
-5. [5️⃣ Prime Number Checker](#prime-number-checker)
-6. [6️⃣ Sleep Function (Async Timeout)](#sleep-function-async-timeout)
-7. [7️⃣ Square of Array](#square-of-array)
-8. [8️⃣ Character Count in String](#character-count-in-string)
-9. [9️⃣ Max Consecutive Substring Length (Simple)](#max-consecutive-substring-length-simple)
+# 📚 Table of Contents
+
+1. [1️⃣ Array.prototype.last](#1-arrayprototype-last)
+2. [2️⃣ Counter (Closure)](#2-counter-closure)
+3. [3️⃣ Max Even-Length Subarray With Index](#3-max-even-length-subarray-with-index)
+4. [4️⃣ Palindrome Checker](#4-palindrome-checker)
+5. [5️⃣ Prime Number Checker](#5-prime-number-checker)
+6. [6️⃣ Sleep Function (Async Timeout)](#6-sleep-function-async-timeout)
+7. [7️⃣ Square of Array](#7-square-of-array)
+8. [8️⃣ Character Count in String](#8-character-count-in-string)
+9. [9️⃣ Max Consecutive Substring Length (Simple)](#9-max-consecutive-substring-length-simple)
 10. [🔟 Max Consecutive Substring (Characters Included)](#max-consecutive-substring-characters-included)
-11. [🎯 Two-Sum](#two-sum)
-12. [🧹 Unique Elements in Array (Remove Duplicates)](#unique-elements-in-array-remove-duplicates)
-13. [🥇 Find Numbers That Appear Only Once](#find-numbers-that-appear-only-once)
+11. [1️⃣1️⃣ Two-Sum](#11-two-sum)
+12. [1️⃣2️⃣ Unique Elements in Array (Remove Duplicates)](#12-unique-elements-in-array-remove-duplicates)
+13. [1️⃣3️⃣ Find Numbers That Appear Only Once](#13-find-numbers-that-appear-only-once)
 
 ---
 
