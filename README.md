@@ -7,18 +7,18 @@
 # 📚 Table of Contents
 
 1. [1️⃣ Array.prototype.last](#1%EF%B8%8F⃣-arrayprototypelast)
-2. [2️⃣ Counter (Closure)](#2-counter-closure)
-3. [3️⃣ Max Even-Length Subarray With Index](#3-max-even-length-subarray-with-index)
-4. [4️⃣ Palindrome Checker](#4-palindrome-checker)
-5. [5️⃣ Prime Number Checker](#5-prime-number-checker)
-6. [6️⃣ Sleep Function (Async Timeout)](#6-sleep-function-async-timeout)
-7. [7️⃣ Square of Array](#7-square-of-array)
-8. [8️⃣ Character Count in String](#8-character-count-in-string)
-9. [9️⃣ Max Consecutive Substring Length (Simple)](#9-max-consecutive-substring-length-simple)
-10. [🔟 Max Consecutive Substring (Characters Included)](#max-consecutive-substring-characters-included)
-11. [1️⃣1️⃣ Two-Sum](#11-two-sum)
-12. [1️⃣2️⃣ Unique Elements in Array (Remove Duplicates)](#12-unique-elements-in-array-remove-duplicates)
-13. [1️⃣3️⃣ Find Numbers That Appear Only Once](#13-find-numbers-that-appear-only-once)
+2. [2️⃣ Counter (Closure)](#2%EF%B8%8F⃣-counter-closure)
+3. [3️⃣ Max Even-Length Subarray With Index](#3%EF%B8%8F⃣-max-even-length-subarray-with-index)
+4. [4️⃣ Palindrome Checker](#4%EF%B8%8F⃣-palindrome-checker)
+5. [5️⃣ Prime Number Checker](#5%EF%B8%8F⃣-prime-number-checker)
+6. [6️⃣ Sleep Function (Async Timeout)](#6%EF%B8%8F⃣-sleep-function-async-timeout)
+7. [7️⃣ Square of Array](#7%EF%B8%8F⃣-square-of-array)
+8. [8️⃣ Character Count in String](#8%EF%B8%8F⃣-character-count-in-string)
+9. [9️⃣ Max Consecutive Substring Length (Simple)](#9%EF%B8%8F⃣-max-consecutive-substring-length-simple)
+10. [🔟 Max Consecutive Substring (Characters Included)](#-max-consecutive-substring-characters-included)
+11. [1️⃣1️⃣ Two-Sum](#1%EF%B8%8F⃣1%EF%B8%8F⃣-two-sum)
+12. [1️⃣2️⃣ Unique Elements in Array (Remove Duplicates)](#1%EF%B8%8F⃣2%EF%B8%8F⃣-unique-elements-in-array-remove-duplicates)
+13. [1️⃣3️⃣ Find Numbers That Appear Only Once](#1%EF%B8%8F⃣3%EF%B8%8F⃣-find-numbers-that-appear-only-once)
 
 ---
 
